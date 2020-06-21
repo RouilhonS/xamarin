@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gvFio3Y5earO24rsBlT/Daz76dDTXaiipJMGig3jHG9tAVGoJtZklq13ucAe04Bt4+LiQ6Fyz+e9K0mVdTX2KQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\steve\\Desktop\\exo\\exo\\exo\\exo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\steve\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

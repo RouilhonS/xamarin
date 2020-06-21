@@ -1,0 +1,13 @@
+C:\Users\steve\Desktop\exo\eval\eval\eval\bin\Debug\netstandard2.0\eval.deps.json
+C:\Users\steve\Desktop\exo\eval\eval\eval\bin\Debug\netstandard2.0\eval.dll
+C:\Users\steve\Desktop\exo\eval\eval\eval\bin\Debug\netstandard2.0\ref\eval.dll
+C:\Users\steve\Desktop\exo\eval\eval\eval\bin\Debug\netstandard2.0\eval.pdb
+C:\Users\steve\Desktop\exo\eval\eval\eval\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\steve\Desktop\exo\eval\eval\eval\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\steve\Desktop\exo\eval\eval\eval\obj\Debug\netstandard2.0\eval.AssemblyInfoInputs.cache
+C:\Users\steve\Desktop\exo\eval\eval\eval\obj\Debug\netstandard2.0\eval.AssemblyInfo.cs
+C:\Users\steve\Desktop\exo\eval\eval\eval\obj\Debug\netstandard2.0\eval.csproj.CoreCompileInputs.cache
+C:\Users\steve\Desktop\exo\eval\eval\eval\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\steve\Desktop\exo\eval\eval\eval\obj\Debug\netstandard2.0\eval.dll
+C:\Users\steve\Desktop\exo\eval\eval\eval\obj\Debug\netstandard2.0\ref\eval.dll
+C:\Users\steve\Desktop\exo\eval\eval\eval\obj\Debug\netstandard2.0\eval.pdb
