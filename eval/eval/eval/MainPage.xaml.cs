@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace eval
 {
@@ -16,13 +17,68 @@ namespace eval
         public MainPage()
         {
             InitializeComponent();
+            Accelerometer.ShakeDetected  += Accelerometer_ShakeDetected ;
         }
 
-        int count = 0;
-        void Button_Clicked(object sender, System.EventArgs e)
+         void Accelerometer_ShakeDetected (object sender, EventArgs e)
         {
-            count++;
-            ((Button)sender).Text = $"You clicked {count} times.";
+            await Audio.Manager.PlaySound("Voice01_01.mp3");
+        }
+
+         public void ToggleAccelerometer()
+        {
+            try
+            {
+                if (Accelerometer.IsMonitoring)
+                  Accelerometer.Stop();
+                else
+                  Accelerometer.Start(speed);
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }
+
+        protected override async void OnAppearing()
+        {
+            await Audio.Manager.PlayBackgroundMusic("Voice01_01.mp3");
+
+            EnableBackgroundMusic.IsToggled = Audio.Manager.MusicOn;
+            BackGroundVolume.Value = Audio.Manager.BackgroundMusicVolume;
+
+            EnableEffects.IsToggled = Audio.Manager.EffectsOn;
+            EffectsVolume.Value = Audio.Manager.EffectsVolume;
+        }
+
+        private void EnableBackgroundMusic_OnToggled(object sender, ToggledEventArgs e)
+        {
+            Audio.Manager.MusicOn = e.Value;
+        }
+
+        private void BackGroundVolume_OnValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            Audio.Manager.BackgroundMusicVolume = (float) e.NewValue;
+        }
+
+        private void EnableEffects_OnToggled(object sender, ToggledEventArgs e)
+        {
+            Audio.Manager.EffectsOn = e.Value;
+        }
+
+        private void EffectsVolume_OnValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            Audio.Manager.EffectsVolume = (float)e.NewValue;
+        }
+
+        private async void Voice01_OnClicked(object sender, EventArgs e)
+        {
+            await Audio.Manager.PlaySound("Voice01_02.mp3");
+        }
+
+        private async void Voice02_OnClicked(object sender, EventArgs e)
+        {
+            await Audio.Manager.PlaySound("Voice02_01.mp3");
         }
     }
 }
